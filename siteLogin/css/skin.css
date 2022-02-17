@@ -1,0 +1,65 @@
+
+#cc-selector input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+#cc-selector-2 input{
+    position:absolute;
+    z-index:999;
+}
+
+.male1{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/male1.png);}
+.male2{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/male2.png);}
+.male3{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/male3.png);}
+
+#cc-selector-fem input{
+    margin:0;padding:0;
+    -webkit-appearance:none;
+       -moz-appearance:none;
+            appearance:none;
+}
+
+#cc-selector-2-fem input{
+    position:absolute;
+    z-index:999;
+}
+
+.drinkcard-cc, #cc-selector-fem input:active +.drinkcard-cc{opacity: .9;}
+.drinkcard-cc, #cc-selector-fem input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+
+
+.fem1{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/fem1.png);}
+.fem2{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/fem2.png);}
+.fem3{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/fem3.png);}
+
+.drinkcard-cc, #cc-selector input:active +.drinkcard-cc{opacity: .9;}
+.drinkcard-cc, #cc-selector input:checked +.drinkcard-cc{
+    -webkit-filter: none;
+       -moz-filter: none;
+            filter: none;
+}
+.drinkcard-cc{
+    cursor:pointer;
+    background-size:contain;
+    background-repeat:no-repeat;
+    display:inline-block;
+    width:111px;height:110px;
+    -webkit-transition: all 100ms ease-in;
+       -moz-transition: all 100ms ease-in;
+            transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+       -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+            filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.drinkcard-cc:hover{
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+       -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+            filter: brightness(1.2) grayscale(.5) opacity(.9);
+}

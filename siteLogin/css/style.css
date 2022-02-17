@@ -1,0 +1,293 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300&family=Yanone+Kaffeesatz&display=swap');
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+.logo {
+	width: 150px;
+	
+}
+#bodyd {
+	
+	color: #ffffff00;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 0.2em;
+	
+}
+h1 {
+	font-size: 25px;
+	padding: 35px;
+	color: #f8b601;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+a {
+	color: #eee;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+.form{
+	border-radius: 3px;
+    position: relative;
+    margin-top: 120px;
+    
+    background: #0000009c;
+    max-width: 560px;
+    margin: 0 auto 100px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+input {
+	border: none;
+	font-family: 'Cairo', sans-serif;
+	font-size: 16px;
+	line-height: 1.9em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+
+/* ---------- LOGIN ---------- */
+.login-page {
+    width: 660px;
+    padding: 5% 0 0;
+}
+
+#bodyds {
+	height: 1080px;
+	width: 1920px;
+}
+#login {
+	margin: 10px auto;
+	width: 380px;
+}
+
+#login form span {
+	background-color: #363b41;
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	color: #cfcfcf;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+#login form input {
+	height: 50px;
+	outline:none;
+}
+
+#login form input[type="text"], input[type="password"] {
+	background-color: #3b4148;
+	border-radius: 0px 3px 3px 0px;
+	-moz-border-radius: 0px 3px 3px 0px;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	color: #b9b9b9;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 298px;
+}
+
+#login form input:focus {
+	color:rgb(255, 255, 255);
+}
+
+#login form input[type="submit"] {
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #f1c18a;
+	color: rgb(75, 75, 75);
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	cursor:pointer;
+	width: 180px;
+}
+
+#login form input[type="submit"]:hover {
+	background-color: #f3be4b;
+}
+
+#login > p {
+	padding: 35px;
+	text-align: center;
+}
+
+#login > p span {
+	padding-left: 5px;
+}
+
+
+
+/* ---------- LOGIN ---------- */
+
+#register {
+	margin: 30px auto;
+	width: 380px;
+}
+
+#register form span	  {
+	background-color: #555555;
+
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	color: #f3ae48;
+	float: left;
+	
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+#radios form span {
+	color: white;
+}
+#register form input {
+	height: 50px;
+	outline:none;
+}
+
+#register form input[type="text"], input[type="password"] {
+	background-color: #3b4148;
+	border-radius: 0px 3px 3px 0px;
+	-moz-border-radius: 0px 3px 3px 0px;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	color: #b9b9b9;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 298px;
+}
+
+#register form input:focus {
+	color:rgb(255, 255, 255);
+}
+
+#register form input[type="submit"] {
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	background-color: #f1c18a;
+	color: rgb(75, 75, 75);
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+	cursor:pointer;
+	width: 280px;
+	margin: 25px;	
+}
+
+#register form input[type="submit"]:hover {
+	background-color: #f3be4b;
+	
+}
+
+#register > p {
+	padding: 35px;
+	text-align: center;
+}
+
+#register > p span {
+	padding-left: 5px;
+}
+#error{
+	margin: 10px;
+	line-height: 1.1;
+	font-weight: bold;
+    color: #cfcfcf;
+    font-size: 15px;
+}
+#error_reg{
+	margin: 10px;
+	line-height: 1.1;
+	font-weight: bold;
+    color: #cfcfcf;
+    font-size: 15px;
+}
+
+
+
+/* =============================================
+* RADIO BUTTONS
+=============================================== */
+
+#radios label {
+	cursor: pointer;
+	position: relative;
+}
+
+#radios label + label {
+	margin-left: 35px;
+}
+
+input[type="radio"] {
+	opacity: 0; /* hidden but still tabable */
+	position: absolute;
+}
+
+input[type="radio"] + i {
+	font-family: 'Material Icons';
+	color: #ffffff;
+	border-radius: 0%;
+	padding: 12px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+}
+
+input[type="radio"]:checked + i {
+	color: #D9E7FD;
+	background-color: #f3be4b;
+}
+
+input[type="radio"]:focus + i {
+	color: #fff;
+}
+#radios{
+    padding: 15px;
+	text-align: center;
+	margin-bottom: 15 auto;
+}
+/* ================ TOOLTIPS ================= */
+
+
+#radios label:hover::before {
+	content: attr(for);
+	font-family: Roboto, -apple-system, sans-serif;
+	text-transform: capitalize;
+	font-size: 11px;
+	position: absolute;
+	top: 170%;
+	left: 0;
+	right: 0;
+	opacity: 0.75;
+	background-color: #323232;
+	color: #fff;	
+	padding: 4px;
+	border-radius: 3px;
+    display: block;
+}
+

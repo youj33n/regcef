@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="css/skin.css" media="screen" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body id="bodyd">
+    <div id = "windowr"  class="login-page"></div>
+    <div class="form">
+
+        <div id="login">
+            <form action="javascript:void(1);" method="get">
+                <img class="logo" src="logoclassic.png" alt="">
+                    <h1>Авторизация</h1>
+                    <div id="error"></div>
+                    <p><span class="material-icons">&#xe7fd;</span><input type="text" id="log-login" placeholder="Логин"></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                    <p><span class="material-icons">&#xe0da;</span></span><input type="text" id="log-password" value="Пароль" onBlur="if(this.value == '') this.value = 'Пароль', this.type = 'text'" onFocus="if(this.value == 'Пароль') this.value = '', this.type = 'password'" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+
+                    <p><input type="submit" onclick="loginAttempt()" value="Войти"></p>
+            </form>
+        </div>
+        <div id="register">
+
+            <form action="javascript:void(1);" method="get">
+
+                    <img class="logo" src="logoclassic.png" alt="Письма мастера дзен">
+                    <h1>Регистрация</h1>
+                    <div id="error_reg"></div>
+                    <p><span class="material-icons">&#xe7fd;</span><input type="text" id="reg-login" placeholder="Логин"></p> <!-- JS because of IE support; better: placeholder="Username" -->
+                    <p><span class="material-icons">&#xe0be;</span><input type="text"  value="Электронная почта" id="reg-mail" onBlur="if(this.value == '') this.value = 'Электронная почта'" onFocus="if(this.value == 'Электронная почта') this.value = ''" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                    <p><span class="material-icons">&#xe0da;</span><input type="text" id="reg-password"  value="Пароль" onBlur="if(this.value == '') this.value = 'Пароль', this.type = 'text'" onFocus="if(this.value == 'Пароль') this.value = '', this.type = 'password'" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                    <p><span class="material-icons">&#xe0da;</span><input type="text" id="reg-password-confirm"  value="Повторите пароль" onBlur="if(this.value == '') this.value = 'Повторите пароль', this.type = 'text'" onFocus="if(this.value == 'Повторите пароль') this.value = '', this.type = 'password'" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
+                    <div id="radios">
+                        <label for="male" class="material-icons">
+                            <input type="radio" onclick="clickgender(1)" name="mode" id="male" value="Мужчина"/>
+                            <i>&#xe4eb;</i>
+                        </label>
+                        <label for="female" class="material-icons">
+                            <input type="radio" name="mode" onclick="clickgender(0)" id="female" value="Женщина" />
+                            <i>&#xe13e;</i>
+                        </label>
+                    </div>
+                    <div id="cc-selector">
+                        <input onchange="isCheckedSkinGender(1)" id="male1" type="radio" name="credit-card" value="male1" />
+                        <label class="drinkcard-cc male1" for="male1"></label>
+                        <input onchange="isCheckedSkinGender(2)" id="male2" type="radio" name="credit-card" value="male2" />
+                        <label class="drinkcard-cc male2"for="male2"></label>
+                        <input onchange="isCheckedSkinGender(3)" id="male3" type="radio" name="credit-card" value="male3" />
+                        <label class="drinkcard-cc male3"for="male3"></label>
+                    </div>
+                    <div id="cc-selector-fem" >
+                        <input onchange="isCheckedSkinGender(4)" id="fem1" type="radio" name="credit-card" value="fem1" />
+                        <label class="drinkcard-cc fem1" for="fem1"></label>
+                        <input onchange="isCheckedSkinGender(5)" id="fem2" type="radio" name="credit-card" value="fem2" />
+                        <label class="drinkcard-cc fem2"for="fem2"></label>
+                        <input onchange="isCheckedSkinGender(6)" id="fem3" type="radio" name="credit-card" value="fem3" />
+                        <label class="drinkcard-cc fem3"for="fem3"></label>
+                    </div>
+
+
+                    <p><input type="submit" onclick="registerAttempt()" value="Регистрация"></p>
+
+            </form>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
