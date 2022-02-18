@@ -11,9 +11,9 @@
     z-index:999;
 }
 
-.male1{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/male1.png);}
-.male2{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/male2.png);}
-.male3{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/male3.png);}
+.male1{background-image:url(../res/male1.png);}
+.male2{background-image:url(../res/male2.png);}
+.male3{background-image:url(../res/male3.png);}
 
 #cc-selector-fem input{
     margin:0;padding:0;
@@ -35,9 +35,9 @@
 }
 
 
-.fem1{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/fem1.png);}
-.fem2{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/fem2.png);}
-.fem3{background-image:url(C:/Users/youj33n/Desktop/DEV/siteLogin/res/fem3.png);}
+.fem1{background-image:url(../res/fem1.png);}
+.fem2{background-image:url(../res/fem2.png);}
+.fem3{background-image:url(../res/fem3.png);}
 
 .drinkcard-cc, #cc-selector input:active +.drinkcard-cc{opacity: .9;}
 .drinkcard-cc, #cc-selector input:checked +.drinkcard-cc{
